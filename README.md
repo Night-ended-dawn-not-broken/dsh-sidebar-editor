@@ -13,6 +13,12 @@ DeepSeek Harness 右侧边栏插件：在右侧标签页里编辑文件、管理
 
 要求 DeepSeek Harness `>=0.2.1-rc.2 <0.3.0`，Node.js 20+。
 
+从 npm 安装：
+
+```sh
+dsh plugin --profile desktop add dsh-sidebar-editor
+```
+
 从 GitHub 安装（纯 JavaScript，无需构建步骤）：
 
 ```sh
