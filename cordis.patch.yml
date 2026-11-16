@@ -1,0 +1,7 @@
+# dsh-sidebar-editor bundle patch: one insert adding the Host row that serves
+# the authenticated read/save routes. The browser half joins the client module
+# graph automatically because package.json declares dsh.client and exports
+# "./client".
+- insert:
+    - id: sidebar-editor
+      name: dsh-sidebar-editor

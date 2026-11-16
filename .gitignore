@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Logs and crash reports
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# Local editor/OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local env and secrets
+.env
+.env.*
+!.env.example
+
+# Local backups and temporary files
+*.bak
+*.bak-*
+*.tmp
+tmp/

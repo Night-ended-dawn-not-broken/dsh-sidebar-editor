@@ -1,0 +1,59 @@
+{
+  "name": "dsh-sidebar-editor",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Edit files, manage folders, and run Git operations (status, clone, pull, selective commit, push) in the DeepSeek Harness right sidebar",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "file-editor"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.2 <0.3.0"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Night-ended-dawn-not-broken/dsh-sidebar-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Night-ended-dawn-not-broken/dsh-sidebar-editor/issues"
+  },
+  "homepage": "https://github.com/Night-ended-dawn-not-broken/dsh-sidebar-editor#readme",
+  "author": "Night-ended-dawn-not-broken"
+}
